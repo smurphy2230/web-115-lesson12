@@ -6,6 +6,30 @@
     <title>Chapter 10 Examples</title>
 </head>
 <body>
+    <img src="images/usa.png" alt="USA flag" onclick="changeImg(this)" />
+    <img src="images/mexico.png" alt="Mexico flag" onclick="changeImg(this)" />
+
+
+    <script>
+        var myImages = [
+            "images/usa.png",
+            "images/canada.png",
+            "images/jamaica.png",
+            "images/mexico.png"
+        ];
+
+        function changeImg(that) {
+            var newImgNumber = Math.round(Math.random() * 3);
+        
+            while (that.src.indexOf(myImages[newImgNumber]) != -1) {
+                newImgNumber = Math.round(Math.random() * 3);
+            
+            }
+        
+            that.src = myImages[newImgNumber];
+        }
+
+    </script>
     
 </body>
 </html>
