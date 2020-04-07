@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p ondblclick="handle(event)">Paragraph</p>
+    <h1 onclick="handle(event)">Heading 1</h1>
+    <span onmouseover="handle(event)">Special Text</span>
+
+    <script>
+function handle(e) {
+    if (e.type == "mouseover") {
+        alert ("You moused over the special text");
+    } 
+}
+
+    </script>
+    
+</body>
+</html>
