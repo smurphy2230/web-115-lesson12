@@ -5,19 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 10 Examples</title>
     <style>
-        .underline {
-            color: red;
-            text-decoration: underline;
+        .tabStrip {
+            background-color: #E4E2D5;
+            padding: 3px;
+            height: 22px;
+        }
+
+        .tabStrip div {
+            float: left;
+            font: 14pt arial;
+            cursor: pointer;
+        }
+
+        .tabStrip-tab {
+            padding: 3px;
+        }
+
+        .tabStrip-tab-hover {
+            border: 1px solid #316AC5;
+            background-color: #C1D2EE;
+            padding: 2px;
+        }
+
+        .tabStrip-tab-click {
+            border: 1px solid #facc5a;
+            background-color: #f9e391;
         }
     </style>
 </head>
 <body>
-    <p>This is paragraph 1.</p>
-    <p>This is paragraph 2.</p>
-    <p>This is paragraph 3.</p>
-
+    <div class="tabStrip">
+        <div data-tab-number="1" class="tabStrip-tab">Tab 1</div>
+        <div data-tab-number="2" class="tabStrip-tab">Tab 2</div>
+        <div data-tab-number="3" class="tabStrip-tab">Tab 3</div>
+    </div>
+    <div id="descContainer"></div>
 
   
-    <script src="ch10ex8.js"></script>    
+    <script src="ch10ex9.js"></script>    
 </body>
 </html>
